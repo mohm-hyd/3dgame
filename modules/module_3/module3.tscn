@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://d2q8y0rtu2njt"]
+
+[ext_resource type="Script" uid="uid://btyaqru70mrka" path="res://modules/module_3/module_3.gd" id="1_w4sr0"]
+[ext_resource type="PlaneMesh" uid="uid://1yxtwy2t2uni" path="res://art/models/office_floor.tres" id="5_jul1w"]
+[ext_resource type="PackedScene" uid="uid://bl5mln5x3487i" path="res://art/models/furniture/basic_cabinet.tscn" id="6_xrire"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_tgi55"]
+data = PackedVector3Array(3.5, 0, 5, -3.5, 0, 5, 3.5, 0, -5, -3.5, 0, 5, -3.5, 0, -5, 3.5, 0, -5)
+
+[node name="Module3" type="Node3D" unique_id=1240278799]
+script = ExtResource("1_w4sr0")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1775047027]
+mesh = ExtResource("5_jul1w")
+
+[node name="BasicCabinet" parent="MeshInstance3D" unique_id=1672241361 instance=ExtResource("6_xrire")]
+transform = Transform3D(1, 0, 0, 0, 0.09752822, 0, 0, 0, 0.64515007, 0, 0.81715345, -3.334756)
+
+[node name="BasicCabinet2" parent="MeshInstance3D" unique_id=1402764732 instance=ExtResource("6_xrire")]
+transform = Transform3D(1, 0, 0, 0, 0.09752822, 0, 0, 0, 0.64515007, 0, 0.8181596, -0.46505094)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=423240389]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=1343828398]
+shape = SubResource("ConcavePolygonShape3D_tgi55")

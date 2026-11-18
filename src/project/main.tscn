@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://cgd0qkgnstuy0"]
+
+[ext_resource type="Script" uid="uid://dd3jt4c6pq3p3" path="res://src/Level.gd" id="1_7eprk"]
+[ext_resource type="PackedScene" uid="uid://p71xwawyruxj" path="res://modules/module_1/module1.tscn" id="2_foovf"]
+[ext_resource type="PackedScene" uid="uid://3sve2nrss2io" path="res://modules/module_2/module2.tscn" id="3_54n4n"]
+[ext_resource type="PackedScene" uid="uid://d2q8y0rtu2njt" path="res://modules/module_3/module3.tscn" id="4_ii3k0"]
+[ext_resource type="PackedScene" uid="uid://c78ayj4g08730" path="res://modules/module_4/module4.tscn" id="5_6qkjt"]
+[ext_resource type="PackedScene" uid="uid://urka8ho68bnr" path="res://modules/module_5/module5.tscn" id="6_d4cja"]
+[ext_resource type="PackedScene" uid="uid://cemb4tpejatpc" path="res://modules/module_6/module_6.tscn" id="7_3hlwr"]
+[ext_resource type="PackedScene" uid="uid://dpnwctrifcih" path="res://player/player.tscn" id="7_o6xl0"]
+[ext_resource type="PackedScene" uid="uid://copneomsehpyd" path="res://modules/module_7/module_7.tscn" id="8_kbwev"]
+[ext_resource type="PackedScene" uid="uid://246jdojywe0o" path="res://modules/module_8/module_8.tscn" id="9_40l47"]
+[ext_resource type="PackedScene" uid="uid://dgotaqv3xl2ur" path="res://modules/module_9/module_9.tscn" id="10_r70va"]
+[ext_resource type="PackedScene" uid="uid://tcpm67yufx24" path="res://modules/module_10/module_10.tscn" id="11_7uaej"]
+[ext_resource type="PackedScene" uid="uid://bsxu4rv25xrlb" path="res://modules/module_11/module_11.tscn" id="12_a6d07"]
+[ext_resource type="PackedScene" uid="uid://bmul8bnin58tf" path="res://modules/module_12/module_12.tscn" id="13_xt3e8"]
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_pl37p"]
+
+[sub_resource type="Sky" id="Sky_aqf0r"]
+sky_material = SubResource("PhysicalSkyMaterial_pl37p")
+
+[sub_resource type="Environment" id="Environment_jgbfd"]
+background_mode = 2
+sky = SubResource("Sky_aqf0r")
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.001
+
+[node name="main" type="Node3D" unique_id=1420146091]
+
+[node name="Level" type="Node3D" parent="." unique_id=835476428]
+script = ExtResource("1_7eprk")
+modules = Array[PackedScene]([ExtResource("6_d4cja"), ExtResource("2_foovf"), ExtResource("3_54n4n"), ExtResource("4_ii3k0"), ExtResource("5_6qkjt"), ExtResource("7_3hlwr"), ExtResource("8_kbwev"), ExtResource("9_40l47"), ExtResource("10_r70va"), ExtResource("11_7uaej"), ExtResource("12_a6d07"), ExtResource("13_xt3e8")])
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=969893666]
+environment = SubResource("Environment_jgbfd")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1784247545]
+transform = Transform3D(0.702692, -0.656933, 0.273243, -0.0493662, 0.338099, 0.939815, -0.709779, -0.67389, 0.205149, 0, 0, 0)
+light_energy = 3.0
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=665493319]
+transform = Transform3D(-4.11738e-08, 0.0415443, -0.999137, -1.46767e-08, 0.999137, 0.0415443, 1, 1.63746e-08, -4.05285e-08, -12, 9.678, 0)
+current = true
+
+[node name="Player" parent="." unique_id=486544315 instance=ExtResource("7_o6xl0")]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 5, 0)

@@ -1,0 +1,14 @@
+[gd_resource type="PlaneMesh" format=3 uid="uid://1yxtwy2t2uni"]
+
+[ext_resource type="Shader" uid="uid://ducyo1qlij6iw" path="res://art/models/office_floor.gdshader" id="1_i08ef"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2kkbc"]
+render_priority = 0
+shader = ExtResource("1_i08ef")
+shader_parameter/line_color = Color(0.8, 0.8, 0.8, 1)
+shader_parameter/bg_color = Color(0.95, 0.95, 0.95, 1)
+shader_parameter/grid_size = 2.0
+
+[resource]
+material = SubResource("ShaderMaterial_2kkbc")
+size = Vector2(7, 10)

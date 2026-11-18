@@ -1,0 +1,56 @@
+[gd_scene format=4 uid="uid://bxx62v0xij27d"]
+
+[ext_resource type="Material" uid="uid://b84cwv5kxjjqs" path="res://art/materials/brown.tres" id="1_l0qbk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_djxi2"]
+resource_name = "Desk"
+cull_mode = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ilokc"]
+_surfaces = [{
+"aabb": AABB(-1, -18.69818, -2.6988769, 2, 19.69818, 5.3977537),
+"format": 34896613377,
+"index_count": 132,
+"index_data": PackedByteArray("AAACABAAAAARAAIABwAQAAIAEQAHAAIABwASABAAEQATAAcAEwASAAcAEQAGABMAEQABAAYAAAABABEAEwAGAAQAAQAEAAYAAQADAAQAAAADAAEAEwAEAAUABQAEAAMAEwAFABIABQADAAAABQAUABIAAAAJAAUABQAJABQACgAAABAAAAAKAAkAEgAVABAAEgAUABUACgAQABUACQAIABQACgALAAkAFAAIAAwAFAAMABUACQAWAAgAFgAMAAgACQALAA0ACQANABYAFwAVAAwAFwAKABUAFgAXAAwACgAPAAsADwANAAsAFwAPAAoAFgANAA4AFgAOABcADwAOAA0AFwAOAA8A"),
+"lods": [0.0042674686, PackedByteArray("AAABAAIAAAADAAEAAQADAAQABQADAAAABQAEAAMAAQAEAAYABwAGAAQAAQAGAAcABwAEAAUAAQAHAAIABQAIAAcABwAIAAIAAAAJAAUABQAJAAgAAAAKAAkACgAAAAIACgALAAkACAAMAAIADAAKAAIACQANAAgADQAMAAgACQALAA0ADQAOAAwACgAPAAsADwANAAsADAAPAAoADwAOAA0ADAAOAA8A")],
+"name": "Desk",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAB5pIFAAAAAAAAAAAAAAAA//8AAAAAAAAAAJIFAAD//wAAkgUAAP//AeaSBQAA//8AAAAAAAD/////AAAAAP///////wAA//8B5mz6AAAAAAHmbPoAAP//AABs+gAAAAD/////AAD//wAA//8AAAAAAAD//wAAAAAAAGz6AAAAAP//kgUAAAAAAeYAAAAA/////5IFAAD//wHmAAAAAP////9s+gAAAAD//2z6AAD//wHm//8AAAAAAeb//wAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_33hp2"]
+resource_name = "Casier_Cube_002"
+_surfaces = [{
+"aabb": AABB(-1, -18.69818, -2.6988769, 2, 19.69818, 5.3977537),
+"format": 34896613383,
+"index_count": 132,
+"index_data": PackedByteArray("AAACADAAAAAxAAIAAAABADEAAAADAAEABAAAADAABAAwADIAMwAEADIAMwAyAAUAMwAGAAQAMwAHAAYANAAJAAoANAA1AAkANAALADUANAAIAAsADAAOADYADAA3AA4ADAANADcADAAPAA0AEAAMADYAEAA2ADgAOQAQADgAOQA4ABEAOQASABAAOQATABIAOgAVABYAOgA7ABUAOgAXADsAOgAUABcAGAAZABoAGAAbABkAPAAdAD0APAAcAB0APgA8AD0APgA9AD8AHwA+AD8AHwA/AB4AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0A"),
+"lods": [0.0042674686, PackedByteArray("AAABAAIAAAADAAEABAAAAAIABQAEAAIABQAGAAQABQAHAAYACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAAMAA4AEAAOABEAEQASABAAEQATABIAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHwAcAB4AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0A")],
+"material": SubResource("StandardMaterial3D_djxi2"),
+"name": "Desk",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 64,
+"vertex_data": PackedByteArray("AAAB5pIF/78AAAAAAAD/vwAA//8AAP+/AAAAAJIF/78AAAHmbPr/vwAA//////+/AAAAAGz6/78AAAAA////vwAAAAAAAP///////wAA//8AAP//AAD/////AAAAAP////8B5mz6/////wAA//////////////////8AAGz6/////wHmkgX///////8AAP////8AAJIF/////wAAAAD/////AAD///+/AAD//////7//////////vwAAAAD///+///8B5pIF/78AAAAAkgX/vwAAAeaSBf+///8AAJIF/7///////////wAA////////AAD//wAA////////AAD//wAAAeaSBf////8B5mz6/////wHmkgX//wAAAeZs+v//AAAAAGz6/////wAA////////AABs+v//AAAAAP////8AAAAAAAD/////AACSBf////8AAAAA//8AAAAAkgX//wAAAeZs+v////8AAGz6/////wHmbPr//wAAAABs+v//AAD//5IF/78AAAHmAAD/vwAA//9s+v+/AAAB5v///78AAAHmAAD/////AeYAAP///////2z6/////wHm//////////+SBf////8B5gAA/////wHm////vwAAAeb///+//////2z6//8AAP//bPr///////+SBf//AAD//5IF////f////3////9/////f////3////9/////f////3////8//7//P/+//z//v/8//7//v/9//7//f/+//3//v/9//7//f/+//3//v/9//7//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//v/9//7//f/+//3//v/9//z//f/8//3//P/9//z//f/8//3//P/9//z//f/8//3//P/9//z//f/8//3//P/8//7//P/+//z//v/8//7//f////3////9/////f////z//v/8//7//v/9//7//f/+//3//v/9//3//f/9//3//f/+//3//v/9//7//f/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ilokc")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_arnbq"]
+data = PackedVector3Array(-1, -1, -2.5813754, -1, 1, -2.6988769, -1, 1, -2.5813758, -1, -1, -2.5813754, -1, -1, -2.6988769, -1, 1, -2.6988769, -1, -1, -2.6988769, 1, 1, -2.6988769, -1, 1, -2.6988769, -1, -1, -2.6988769, 1, -1, -2.6988769, 1, 1, -2.6988769, 1, -1, 2.5813754, 1, 1, 2.6988769, 1, 1, 2.5813758, 1, -1, 2.5813754, 1, -1, 2.6988769, 1, 1, 2.6988769, 1, -1, 2.6988769, -1, 1, 2.6988769, 1, 1, 2.6988769, 1, -1, 2.6988769, -1, -1, 2.6988769, -1, 1, 2.6988769, 1, -1, -2.5813758, -1, -18.69818, -2.5813754, -1, -1, -2.5813754, 1, -1, -2.5813758, 1, -18.69818, -2.5813758, -1, -18.69818, -2.5813754, 1, 1, 2.5813758, -1, 1, 2.6988769, -1, 1, 2.5813754, 1, 1, 2.5813758, 1, 1, 2.6988769, -1, 1, 2.6988769, 1, 1, -2.6988769, -1, 1, -2.5813758, -1, 1, -2.6988769, 1, 1, -2.6988769, 1, 1, -2.5813754, -1, 1, -2.5813758, 1, 1, -2.5813754, -1, 1, 2.5813754, -1, 1, -2.5813758, 1, 1, -2.5813754, 1, 1, 2.5813758, -1, 1, 2.5813754, -1, -1, -2.6988769, 1, -18.69818, -2.6988769, 1, -1, -2.6988769, -1, -1, -2.6988769, -1, -18.69818, -2.6988769, 1, -18.69818, -2.6988769, -1, -1, -2.5813754, 1, -1, 2.5813754, 1, -1, -2.5813758, -1, -1, -2.5813754, -1, -1, 2.5813758, 1, -1, 2.5813754, 1, -1, -2.6988769, 1, 1, -2.5813754, 1, 1, -2.6988769, 1, -1, -2.6988769, 1, -1, -2.5813758, 1, 1, -2.5813754, 1, -1, -2.5813758, 1, 1, 2.5813758, 1, 1, -2.5813754, 1, -1, -2.5813758, 1, -1, 2.5813754, 1, 1, 2.5813758, -1, -1, 2.6988769, -1, 1, 2.5813754, -1, 1, 2.6988769, -1, -1, 2.6988769, -1, -1, 2.5813758, -1, 1, 2.5813754, -1, -1, 2.5813758, -1, 1, -2.5813758, -1, 1, 2.5813754, -1, -1, 2.5813758, -1, -1, -2.5813754, -1, 1, -2.5813758, -1, -18.69818, 2.5813758, 1, -18.69818, 2.6988769, 1, -18.69818, 2.5813754, -1, -18.69818, 2.5813758, -1, -18.69818, 2.6988769, 1, -18.69818, 2.6988769, -1, -18.69818, -2.6988769, 1, -18.69818, -2.5813758, 1, -18.69818, -2.6988769, -1, -18.69818, -2.6988769, -1, -18.69818, -2.5813754, 1, -18.69818, -2.5813758, -1, -1, 2.6988769, -1, -18.69818, 2.5813758, -1, -1, 2.5813758, -1, -1, 2.6988769, -1, -18.69818, 2.6988769, -1, -18.69818, 2.5813758, 1, -1, -2.6988769, 1, -18.69818, -2.5813758, 1, -1, -2.5813758, 1, -1, -2.6988769, 1, -18.69818, -2.6988769, 1, -18.69818, -2.5813758, 1, -1, 2.5813754, 1, -18.69818, 2.6988769, 1, -1, 2.6988769, 1, -1, 2.5813754, 1, -18.69818, 2.5813754, 1, -18.69818, 2.6988769, -1, -1, 2.5813758, 1, -18.69818, 2.5813754, 1, -1, 2.5813754, -1, -1, 2.5813758, -1, -18.69818, 2.5813758, 1, -18.69818, 2.5813754, -1, -1, -2.5813754, -1, -18.69818, -2.6988769, -1, -1, -2.6988769, -1, -1, -2.5813754, -1, -18.69818, -2.5813754, -1, -18.69818, -2.6988769, 1, -1, 2.6988769, -1, -18.69818, 2.6988769, -1, -1, 2.6988769, 1, -1, 2.6988769, 1, -18.69818, 2.6988769, -1, -18.69818, 2.6988769)
+
+[node name="BasicDesk" type="MeshInstance3D" unique_id=1410433769]
+transform = Transform3D(1, 0, 0, 0, 0.09752822, 0, 0, 0, 0.64515007, 0, 0, 0)
+mesh = SubResource("ArrayMesh_33hp2")
+skeleton = NodePath("")
+surface_material_override/0 = ExtResource("1_l0qbk")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=871206635]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=827390120]
+shape = SubResource("ConcavePolygonShape3D_arnbq")

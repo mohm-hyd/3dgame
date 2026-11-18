@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cioed31efvhbv"]
+
+[ext_resource type="Script" uid="uid://ct0dj5es8p6pp" path="res://modules/base_module.gd" id="1_ippni"]
+
+[node name="BaseModule" type="Node3D" unique_id=1453479166]
+script = ExtResource("1_ippni")

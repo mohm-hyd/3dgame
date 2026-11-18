@@ -1,0 +1,2 @@
+class_name Module_1
+extends BaseModule

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c78ayj4g08730"]
+
+[ext_resource type="Script" uid="uid://cha6gb57tlpod" path="res://modules/module_4/module_4.gd" id="1_bmq60"]
+[ext_resource type="PlaneMesh" uid="uid://1yxtwy2t2uni" path="res://art/models/office_floor.tres" id="5_r8jpa"]
+[ext_resource type="PackedScene" uid="uid://bxx62v0xij27d" path="res://art/models/furniture/basic_desk.tscn" id="6_ou8h6"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_0sdh3"]
+data = PackedVector3Array(3.5, 0, 5, -3.5, 0, 5, 3.5, 0, -5, -3.5, 0, 5, -3.5, 0, -5, 3.5, 0, -5)
+
+[node name="Module4" type="Node3D" unique_id=1270143272]
+script = ExtResource("1_bmq60")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=491938001]
+mesh = ExtResource("5_r8jpa")
+
+[node name="BasicDesk1" parent="MeshInstance3D" unique_id=1410433769 instance=ExtResource("6_ou8h6")]
+transform = Transform3D(1, 0, 0, 0, 0.09752822, 0, 0, 0, 0.64515007, 0, 1.7667837, -0.07698202)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=240888667]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=412914786]
+shape = SubResource("ConcavePolygonShape3D_0sdh3")

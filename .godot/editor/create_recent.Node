@@ -1,0 +1,11 @@
+Area3D
+AnimationTree
+CollisionShape3D
+StaticBody3D
+MeshInstance3D
+CharacterBody3D
+RayCast3D
+Camera3D
+DirectionalLight3D
+WorldEnvironment
+Node3D
